@@ -45,7 +45,7 @@ insert into Book (isbn, title, publish_date, num_of_chapters, num_of_pages, rati
 ('9780451526342', 'Animal Farm', '2004-01-01', 10, 140, 8, 1, '75th Anniversary', 5),
 ('743477111', 'Romeo and Juliet', '2004-01-01', 10, 336, 9, 4, 'Updated', 6),
 ('9780135957059', 'The Pragmatic Programmer: Your Journey To Mastery','2019-01-01', 9,  352, 9, 1, '2nd', 2),
-('439023483', 'The Hunger Games', '2008-01-01', 27, 223, 9, 1, '1st', 2),
+('439023483', 'The Hunger Games', '2008-01-01', 27, 223, 9, 2, '1st', 2),
 ('9780553214208', 'From the Earth to the Moon','1993-01-01', 27, 240, 9, 1, '', 3);
  
 --Values for the Book_Genres tables
@@ -66,4 +66,5 @@ insert into book_author (isbn, author_id) values
 ('9780135957059', 6),
 ('9780451526342', 4),
 ('9780553214208', 2),
-('439023483', 3);
+('439023483', 3),
+('743477111', 4);
