@@ -33,7 +33,7 @@ create table if not exists series (
 );
 
 create table if not exists book (
-    isbn varchar(13),
+    isbn text,
     title text,
     publish_date date,
     num_of_chapters int,
