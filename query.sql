@@ -1,4 +1,4 @@
--- Set future types to affect nguyenm schema by default 
+-- Set future types to affect group4 schema by default 
 SET search_path TO group4, public;
 
 --1.) Give the First and Last name of the authors of books that are part of a series
