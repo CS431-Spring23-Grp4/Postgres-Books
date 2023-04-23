@@ -20,3 +20,22 @@ where a.author_id = ba.author_id and ba.isbn = bg.isbn and bg.genre_id = g.genre
 select distinct b.title 
 from book b, book_genre bg, genre g 
 where b.isbn = bg.isbn and bg.genre_id = g.genre_id and b.num_of_pages > 200 and g.name = 'Fantasy';
+
+--8.) List the Genres from the number of books from most to least 
+select g.name
+from genre g 
+inner join book_genre bg on g.genre_id = bg.genre_id 
+group by g.genre_id
+order by count(name) DESC;
+
+--9.) List the Titles of all Books From New York-based Publishers 
+select b.title
+from book b
+inner join publisher p on p.publisher_id = b.publisher_id
+where location = 'New York';
+
+--10.) List the ISBN and title of books with more than 1 author
+select distinct b.isbn, b.title
+from book b
+inner join book_author ba on b.isbn = ba.isbn
+where author_id >= 5;
