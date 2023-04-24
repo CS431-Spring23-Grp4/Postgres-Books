@@ -1,5 +1,5 @@
 # Group 4 - Contributions
-## Michael Nguyen
+### Michael Nguyen
 - Created tables (book, book_authors) in create.sql
 - Created insert statements in insert.sql
 - Created queries 1-4 in query.sql
