@@ -6,6 +6,21 @@ select distinct a.first_name, a.last_name
 from author a, book b, book_author ba 
 where b.series_id > 1 and b.isbn = ba.isbn and ba.author_id = a.author_id;
 
+--2.) List the ISBN and Title of books that are not part of a series
+select b.title, b.isbn 
+from book b 
+where b.series_id = 1; 
+
+--3.) List the title and publishing date of books sorted by publishing dates from earliest to latest
+select b.title, b.publish_date 
+from book b 
+order by b.publish_date asc;
+
+--4.) List the Title of Books published after 1990 in the Technology genre
+select b.title 
+from book b, book_genre bg 
+where b.publish_date > '1990-01-01' and bg.isbn = b.isbn and bg.genre_id = 2;
+
 --5.) List the Name of Publishers of Books which are in the Technology genre
 select distinct p.name 
 from publisher p, book b, book_genre bg, genre g 
