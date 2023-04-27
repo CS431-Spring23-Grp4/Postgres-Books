@@ -53,4 +53,4 @@ where location = 'New York';
 select distinct b.isbn, b.title
 from book b
 inner join book_author ba on b.isbn = ba.isbn
-where author_id >= 5;
+where author_id >= 5 and author_id <=6;
